@@ -1,0 +1,10 @@
+This chatbot is created using Rasa NLU.
+In order to run this chatbot the user will have to install anaconda environment and he/she will have to install Rasa.
+It is suggested to create a new environment using anaconda prompt and in that environment run this chatbot.
+
+INSTRUCTIONS TO BE FOLLOWED:
+1.) Rasa shell// to load and run the model, after typing this in the anaconda prompt it will take some time to load the chatboat.
+After the chatbot has started the user can answer the chatbot's questions  as per his/her physical condition and expect a medical report from it.  
+After the user is done he/she must type /stop command the chatbot will stop.
+
+
