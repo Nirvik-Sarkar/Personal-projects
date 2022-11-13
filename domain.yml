@@ -1,0 +1,119 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - sick
+  - viral_fever
+  - Fungal_infection
+  - GERD
+  - Allergy
+  - Chronic_cholestasis
+  
+  
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  
+  utter_sick:
+  - text: "what are your symptoms"
+  
+  utter_fatigue:
+  - text: "So are you feeling a symptom like Fatigue?"
+  
+  utter_runny_nose:
+  - text: "Are you having a runny nose?"
+  
+  utter_fevercure:
+  - text: "You are suffering from Viral fever  so take rest and consume antibiotics"
+  
+  utter_skin_rash:
+  - text: "So are you feeling a symptom like skin rash?"
+  
+  utter_Dischromic_patches:
+  - text: "Are you having a symptom like Dischromic patches?"
+  
+  utter_itching:
+  - text: "Are you having a symptom like itching?"
+  
+  utter_nodal_skin_eruptions:
+  - text: "Are you having a symptom like nodal skin eruption?"
+  
+  utter_fungalinfection_cure:
+  - text: "You are suffering from Fungal infection so bath twice a day\nuse neem or dettol in bathing water \n keep infected area dry and\n use clean cloths"
+  
+  utter_chills:
+  - text: "Are you having a symptom like chills"
+  
+  utter_shivering:
+  - text: "Are you having a symptom like shivering"
+
+  utter_continuous_sneezing:
+  - text: "Are you having a symptom like continuous sneezing"
+
+  utter_allergycure:
+  - text: "You are suffering from Allergy  so apply calamine\n use ice to compress itching"
+
+  utter_vomiting:
+  - text: "Are you having a symptom like vomiting?"
+  
+  utter_chest_pain:
+  - text: "Are you having a symptom like chest pain?"
+  
+  utter_acidity:
+  - text: "Are you having a symptom like acidity?"
+  
+  utter_stomach_pain:
+  - text: "Are you having a symptom like stomach pain?"
+  
+  utter_ulcers_on_tounge:
+  - text: "Are you having a symptom like ulcers on tounge?"
+  
+  utter_cough:
+  - text: "Are you having a symptom like cough?"
+ 
+  utter_GERDcure:
+  - text: "You are suffering from GERD so avoid fatty spicy food\n avoid lying down after eating\n maintain healthy weight\n exercise"  
+
+  utter_yellowish_skin:
+  - text: "Are you having a symptom like yellowish skin"
+  
+  utter_abdominal_pain:
+  - text: "Are you having a symptom like abdominal pain"
+  
+  utter_loss_of_appetite:
+  - text: "Are you having a symptom like loss of appetite"
+  
+  utter_yellowing_of_eyes:
+  - text: "Are you having a symptom like yellowing of eyes"
+  
+  utter_nausea:
+  - text: "Are you having a symptom like nausea"
+   
+  utter_Chronic_cholestasiscure:
+  - text: "You are suffering from Chronic cholestasis  so take cold baths\n anti itch medicine\n consult doctor\n eat healthy"
+ 
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

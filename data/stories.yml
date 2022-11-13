@@ -1,0 +1,202 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  
+- story: Fever
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sick
+  - action: utter_sick
+  - intent: viral_fever
+  - action: utter_fatigue
+  - intent: affirm
+  - action: utter_runny_nose
+  - intent: affirm
+  - action: utter_fevercure
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: Fungal infection
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sick
+  - action: utter_sick
+  - intent: Fungal_infection
+  - action: utter_skin_rash
+  - intent: affirm
+  - action: utter_Dischromic_patches
+  - intent: affirm
+  - action: utter_itching
+  - intent: affirm
+  - action: utter_nodal_skin_eruptions
+  - intent: affirm
+  - action: utter_fungalinfection_cure
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: Allergy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sick
+  - action: utter_sick
+  - intent: Allergy
+  - action: utter_chills
+  - intent: affirm
+  - action: utter_shivering
+  - intent: affirm
+  - action: utter_continuous_sneezing
+  - intent: affirm
+  - action: utter_allergycure
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: GERD1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sick
+  - action: utter_sick
+  - intent: GERD
+  - action: utter_vomiting
+  - intent: affirm
+  - action: utter_chest_pain
+  - intent: affirm
+  - action: utter_acidity
+  - intent: affirm
+  - action: utter_stomach_pain
+  - intent: affirm
+  - action: utter_ulcers_on_tounge
+  - intent: affirm
+  - action: utter_cough
+  - intent: affirm
+  - action: utter_GERDcure
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: GERD2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sick
+  - action: utter_sick
+  - intent: GERD
+  - action: utter_vomiting
+  - intent: affirm
+  - action: utter_chest_pain
+  - intent: deny
+  - action: utter_acidity
+  - intent: deny
+  - action: utter_stomach_pain
+  - intent: deny
+  - action: utter_ulcers_on_tounge
+  - intent: deny
+  - action: utter_cough
+  - intent: deny
+  - action: utter_nausea
+  - intent: affirm
+  - action: utter_yellowish_skin
+  - intent: affirm
+  - action: utter_abdominal_pain
+  - intent: affirm
+  - action: utter_loss_of_appetite
+  - intent: affirm
+  - action: utter_yellowing_of_eyes
+  - intent: affirm
+  - action: utter_itching
+  - intent: affirm
+  - action: utter_Chronic_cholestasiscure
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: Chronic cholestasis1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sick
+  - action: utter_sick
+  - intent: Chronic_cholestasis
+  - action: utter_vomiting
+  - intent: affirm
+  - action: utter_yellowish_skin
+  - intent: affirm
+  - action: utter_abdominal_pain
+  - intent: affirm
+  - action: utter_loss_of_appetite
+  - intent: affirm
+  - action: utter_yellowing_of_eyes
+  - intent: affirm
+  - action: utter_nausea
+  - intent: affirm
+  - action: utter_Chronic_cholestasiscure
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: Chronic cholestasis2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sick
+  - action: utter_sick
+  - intent: Chronic_cholestasis
+  - action: utter_vomiting
+  - intent: affirm
+  - action: utter_yellowish_skin
+  - intent: deny
+  - action: utter_abdominal_pain
+  - intent: deny
+  - action: utter_loss_of_appetite
+  - intent: deny
+  - action: utter_yellowing_of_eyes
+  - intent: deny
+  - action: utter_nausea
+  - intent: deny
+  - action: utter_chest_pain
+  - intent: affirm
+  - action: utter_acidity
+  - intent: affirm
+  - action: utter_stomach_pain
+  - intent: affirm
+  - action: utter_cough
+  - intent: affirm
+  - action: utter_ulcers_on_tounge
+  - intent: affirm
+  - action: utter_GERDcure
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
